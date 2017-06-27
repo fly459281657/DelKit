@@ -29,7 +29,7 @@ public class StringBeanImpl implements StringBean {
     @Override
     public void getData(String url, final OnBackCall onBackCall) {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://www.baidu.com")
+                .baseUrl("https://www.baidu.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         NetService netService = retrofit.create(NetService.class);
@@ -37,6 +37,7 @@ public class StringBeanImpl implements StringBean {
         call.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
+
                 onBackCall.onSuccess(response.body());
             }
 

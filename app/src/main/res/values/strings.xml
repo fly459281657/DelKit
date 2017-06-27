@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
     <string name="app_name">DelKit</string>
+    <string name="is_debug">true</string>
+
+
     <string name="get_data">获取数据</string>
 
     <array name="main_menu">
