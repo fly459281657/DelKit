@@ -13,6 +13,6 @@ public class DelApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-//        isDebug=getResources().getBoolean(R.string.is_debug);
+        isDebug = Boolean.parseBoolean(getResources().getString(R.string.is_debug));
     }
 }

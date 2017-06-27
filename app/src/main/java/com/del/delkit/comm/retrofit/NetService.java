@@ -12,7 +12,7 @@ import retrofit2.http.Path;
 
 public interface NetService {
 
-    @GET("{url}")
-    Call<String> getMvpRespnose(@Path("url") String url);
+    @GET("/")
+    Call<String> getMvpRespnose();
 
 }
